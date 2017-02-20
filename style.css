@@ -40,6 +40,7 @@ div.content h2 {
 .mySlides {
     display: none;
     text-align: center;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 
