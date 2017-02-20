@@ -1,17 +1,20 @@
 body {
     font-type: "Times New Roman";
-    color: gray;
+    color: grey;
+    font-size: 12pt;
 }
 
 h1 {
     text-align: center;
     color: grey;
     font-family: "Satisfy", serif;
+    font-size: 3em;
 }
 
-div h2 {
+div.content h2 {
     color: grey;
     font-family: "Satisfy", serif;
+    font-size: 2em;
 }
 
 * {
