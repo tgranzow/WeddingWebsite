@@ -4,11 +4,14 @@ body {
 }
 
 h1 {
+    text-align: center;
     color: grey;
+    font-family: "Satisfy", serif;
 }
 
 div h2 {
     color: grey;
+    font-family: "Satisfy", serif;
 }
 
 * {
