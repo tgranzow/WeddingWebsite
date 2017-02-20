@@ -1,7 +1,6 @@
 function main() {
     for (let count = 0; count < 4; count++) {
         document.getElementsByClassName("dot")[count].addEventListener("click", function() {
-            debugger;
             currentSlide(count + 1);
         }, false);
     }

@@ -2,6 +2,7 @@ body {
     font-type: "Times New Roman";
     color: grey;
     font-size: 12pt;
+    background-image: url("images/003-granulated-loom.png");
 }
 
 h1 {
@@ -9,6 +10,8 @@ h1 {
     color: grey;
     font-family: "Satisfy", serif;
     font-size: 3em;
+    padding: 0px;
+    margin-bottom: 0px;
 }
 
 div.content h2 {
@@ -19,6 +22,10 @@ div.content h2 {
 
 * {
     box-sizing: border-box
+}
+
+#housepictures {
+    text-align: center;
 }
 
 
@@ -32,6 +39,7 @@ div.content h2 {
 
 .mySlides {
     display: none;
+    text-align: center;
 }
 
 
