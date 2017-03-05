@@ -1,8 +1,43 @@
+#body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    text-align: center;
+    padding: 0px;
+    Margin: 0px;
+}
+
+.slideshow-container {
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    background-color: black;
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.content {
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    margin: 2px;
+    margin-bottom: 5px;
+    padding: 0px;
+}
+
 body {
     font-type: "Times New Roman";
     color: grey;
-    font-size: 12pt;
+    font-size: 14pt;
     background-image: url("images/003-granulated-loom.png");
+}
+
+.test {
+    margin-top: -3px;
 }
 
 h1 {
@@ -18,23 +53,15 @@ div.content h2 {
     color: grey;
     font-family: "Satisfy", serif;
     font-size: 2em;
+    margin-bottom: 0;
 }
 
 * {
     box-sizing: border-box
 }
 
-#housepictures {
+#housePictures {
     text-align: center;
-}
-
-
-/* Slideshow container */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
 }
 
 .mySlides {
@@ -125,22 +152,27 @@ div.content h2 {
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+    overflow: hidden;
 }
 
 @-webkit-keyframes fade {
     from {
+        overflow: hidden;
         opacity: .4
     }
     to {
+        overflow: hidden;
         opacity: 1
     }
 }
 
 @keyframes fade {
     from {
+        overflow: hidden;
         opacity: .4
     }
     to {
+        overflow: hidden;
         opacity: 1
     }
 }
