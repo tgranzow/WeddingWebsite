@@ -1,11 +1,11 @@
 <html>
     <head>
         <?php
-        $debugger=0;
-        $gitHubUser="tnepper";
-        $gitHubRepo="WeddingWebsite";
-        $gitHubBranch="master";
-        $downloadURL="https://codeload.github.com/" . $gitHubUser . "/" . $gitHubRepo . "/zip/" . $gitHubBranch;
+            $debugger=0;
+            $gitHubUser="tnepper";
+            $gitHubRepo="WeddingWebsite";
+            $gitHubBranch="master";
+            $downloadURL="https://codeload.github.com/" . $gitHubUser . "/" . $gitHubRepo . "/zip/" . $gitHubBranch;
         ?>
         <title>Fetch Latest from GitHub</title>
     </head>
@@ -56,7 +56,7 @@
                             }
                             if ($exitStatus == 0) {
                                 echo "Cleanup complete<br />";
-                                echo "Task Complete";
+                                echo "Task Complete<br />";
                             } else {
                                 echo "Cleanup Failed<br />";
                             }
@@ -70,7 +70,7 @@
                     echo "Download Failed<br />";
                 }
             } else {
-                echo "Deleting old files failed";
+                echo "Deleting old files failed<br />";
             }
         ?>
     </body>
