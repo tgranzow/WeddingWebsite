@@ -1,9 +1,13 @@
 function main() {
-    for (let count = 0; count < document.getElementsByClassName("dot").length; count++) {
-        document.getElementsByClassName("dot")[count].addEventListener("click", function() {
-            currentSlide(count + 1);
-        }, false);
-    }
+    // for (let count = 0; count < document.getElementsByClassName("dot").length; count++) {
+    //     document.getElementsByClassName("dot")[count].addEventListener("click", function() {
+    //         currentSlide(count + 1);
+    //     }, false);
+    // }
+    document.getElementById("dots").addEventListener("click", function(evt) {
+        debugger;
+        currentSlide();
+    });
     showSlides(slideIndex);
 }
 var slideIndex = 1;
