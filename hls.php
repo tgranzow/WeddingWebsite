@@ -11,19 +11,28 @@ to your webserver running PHP.
 */
 
 // Take payload from github and load it into an array
-$payload=json_decode($_POST['payload'],true);
+$gitData=json_decode($_POST['payload'], true);
 // Get the name of the current branch
-$branch=explode("/", $payload['ref'])[2];
+$branch=explode("/", $gitData['ref'])[2];
 // Get the owner of the repository
-$repoUserName=$payload['repository']['owner']['name'];
+$repoUserName=$gitData['repository']['owner']['name'];
 // Get the name of the repository
-$repoName=$payload['repository']['name'];
+$repoName=$gitData['repository']['name'];
 // Create the URL required to fetch branches from the repository
 $branchURL="https://github.com/" . $repoUserName . "/" . $repoName . "/archive/" . $branch . ".zip";
 // Name of the downloaded zip
 $zippedBranch=$branch . ".zip";
 // Name of the folder extracted from the zip
 $unzippedBranch=$repoName . "-" . $branch;
+var_dump($_POST['payload']);
+var_dump($gitPayload);
+
+echo $branch . "\n";
+echo $repoName . "\n";
+echo $repoUserName . "\n";
+echo $branchURL . "\n";
+echo $zippedBranch . "\n";
+echo $unzippedBranch . "\n";
 
 if ($branch === "master") {
     // Download zipped branch
@@ -60,5 +69,7 @@ if ($branch === "master") {
     } else {
         echo "Failed to download.";
     }
+} else {
+    echo "Not Master";
 }
 ?>
