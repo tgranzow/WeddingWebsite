@@ -3,7 +3,7 @@
 Hook Line Syncer
 Version 1.0
 Written By: Jason Granzow
-GitHub: https://github.com/jgranzow86/HookLineAndSyncer
+GitHub: https://github.com/jgranzow86/HookLineSyncer
 
 This uses GitLab's hooks to sync
 your latested pushed master branch
