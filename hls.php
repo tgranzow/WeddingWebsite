@@ -7,23 +7,24 @@ GitHub: https://github.com/jgranzow86/HookLineAndSyncer
 
 This uses GitLab's hooks to sync
 your latested pushed master branch
-to your webserver running PHP.up
+to your webserver running PHP.
 */
 
 // Take payload from github and load it into an array
-$gitData=json_decode($_POST['payload'], true);
+$payload=json_decode(file_get_contents("php://input"),true);
 // Get the name of the current branch
-$branch=explode("/", $gitData['ref'])[2];
+$branch=explode("/", $payload['ref'])[2];
 // Get the owner of the repository
-$repoUserName=$gitData['repository']['owner']['name'];
+$repoUserName=$payload['repository']['owner']['name'];
 // Get the name of the repository
-$repoName=$gitData['repository']['name'];
+$repoName=$payload['repository']['name'];
 // Create the URL required to fetch branches from the repository
 $branchURL="https://github.com/" . $repoUserName . "/" . $repoName . "/archive/" . $branch . ".zip";
 // Name of the downloaded zip
 $zippedBranch=$branch . ".zip";
 // Name of the folder extracted from the zip
 $unzippedBranch=$repoName . "-" . $branch;
+
 var_dump($_POST['payload']);
 var_dump($gitPayload);
 
@@ -69,7 +70,5 @@ if ($branch === "master") {
     } else {
         echo "Failed to download.";
     }
-} else {
-    echo "Not Master";
 }
 ?>
