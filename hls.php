@@ -49,7 +49,7 @@ if ($branch === "master") {
             $zipExtract->close();
             echo "Unziped Sucessfull\n";
 
-            exec ("mv " . $unzippedBranch . "/* ./");
+            exec ("mv -r " . $unzippedBranch . "/* ./");
 
             // Remove zipped branch and unzipped branch folder
             rmdir($unzippedBranch);
