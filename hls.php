@@ -7,7 +7,7 @@ GitHub: https://github.com/jgranzow86/HookLineAndSyncer
 
 This uses GitLab's hooks to sync
 your latested pushed master branch
-to your webserver running PHP.
+to your webserver running PHP.up
 */
 
 // Take payload from github and load it into an array
