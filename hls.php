@@ -25,9 +25,6 @@ $zippedBranch=$branch . ".zip";
 // Name of the folder extracted from the zip
 $unzippedBranch=$repoName . "-" . $branch;
 
-var_dump($_POST['payload']);
-var_dump($gitPayload);
-
 echo $branch . "\n";
 echo $repoName . "\n";
 echo $repoUserName . "\n";
@@ -49,24 +46,12 @@ if ($branch === "master") {
             $zipExtract->close();
             echo "Unziped Sucessfull\n";
 
+            // Move file and folders from unzipped branch to root of site
             exec ("mv -r " . $unzippedBranch . "/* ./");
 
             // Remove zipped branch and unzipped branch folder
             rmdir($unzippedBranch);
             unlink($zippedBranch);
-
-            // Check if directory is there
-            // if (is_dir($unzippedBranch)) {
-            //     // Scan directory and create array of files
-            //     $files=scandir($unzippedBranch);
-            //     // Cycle through array and move files from unzipped branch folder
-            //     foreach ($files as $fileName) {
-            //         if ($fileName != "." && $fileName != "..") {
-            //             rename($unzippedBranch . "/" . $fileName, "./" . $fileName);
-            //         }
-            //     }
-            //
-            // }
         } else {
             echo "Unzip Failed";
         }
