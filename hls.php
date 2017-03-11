@@ -49,21 +49,24 @@ if ($branch === "master") {
             $zipExtract->close();
             echo "Unziped Sucessfull\n";
 
-            // Check if directory is there
-            if (is_dir($unzippedBranch)) {
-                // Scan directory and create array of files
-                $files=scandir($unzippedBranch);
-                // Cycle through array and move files from unzipped branch folder
-                foreach ($files as $fileName) {
-                    if ($fileName != "." && $fileName != "..") {
-                        rename($unzippedBranch . "/" . $fileName, "./" . $fileName);
-                    }
-                }
+            exec ("mv " . $unzippedBranch . "/* ./");
 
-                // Remove zipped branch and unzipped branch folder
-                rmdir($unzippedBranch);
-                unlink($zippedBranch);
-            }
+            // Remove zipped branch and unzipped branch folder
+            rmdir($unzippedBranch);
+            unlink($zippedBranch);
+
+            // Check if directory is there
+            // if (is_dir($unzippedBranch)) {
+            //     // Scan directory and create array of files
+            //     $files=scandir($unzippedBranch);
+            //     // Cycle through array and move files from unzipped branch folder
+            //     foreach ($files as $fileName) {
+            //         if ($fileName != "." && $fileName != "..") {
+            //             rename($unzippedBranch . "/" . $fileName, "./" . $fileName);
+            //         }
+            //     }
+            //
+            // }
         } else {
             echo "Unzip Failed";
         }
