@@ -19,18 +19,18 @@ $repoUserName=$payload['repository']['owner']['name'];
 // Get the name of the repository
 $repoName=$payload['repository']['name'];
 // Create the URL required to fetch branches from the repository
-$branchURL="https://github.com/" . $repoUserName . "/" . $repoName . "/archive/" . $branch . ".zip";
+$branchURL="https://github.com/$repoUserName/$repoName/archive/$branch.zip";
 // Name of the downloaded zip
-$zippedBranch=$branch . ".zip";
+$zippedBranch="$branch.zip";
 // Name of the folder extracted from the zip
-$unzippedBranch=$repoName . "-" . $branch;
+$unzippedBranch="$repoName-$branch";
 
-echo $branch . "\n";
-echo $repoName . "\n";
-echo $repoUserName . "\n";
-echo $branchURL . "\n";
-echo $zippedBranch . "\n";
-echo $unzippedBranch . "\n";
+echo "$branch\n";
+echo "$repoName\n";
+echo "$repoUserName\n";
+echo "$branchURL\n";
+echo "$zippedBranch\n";
+echo "$unzippedBranch\n";
 
 if ($branch === "master") {
     // Download zipped branch
@@ -46,12 +46,14 @@ if ($branch === "master") {
             $zipExtract->close();
             echo "Unziped Sucessfull\n";
 
+            // Remove old files
+            exec("find ./* -prune -not -name $unzippedBranch |xargs rm -rf --");
+
             // Move file and folders from unzipped branch to root of site
-            exec ("mv -r " . $unzippedBranch . "/* ./");
+            exec("mv $unzippedBranch/* ./");
 
             // Remove zipped branch and unzipped branch folder
             rmdir($unzippedBranch);
-            unlink($zippedBranch);
         } else {
             echo "Unzip Failed";
         }
