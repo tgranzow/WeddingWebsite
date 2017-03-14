@@ -9,13 +9,14 @@
 
     <body>
         <div class="navigation">
-            <ul>
-                <li>Home</li>
-                <li>Our Story</li>
-                <li>The Wedding</li>
-                <li>Accomodations</li>
-                <li>Photos</li>
-                <li>RSVP</li>
+
+                <div id="nav_home">Home</div>
+                <div id="nav_OurStory">Our Story</div>
+                <div id="nav_TheWedding">The Wedding</div>
+                <div id="nav_Accomodations">Accomodations</div>
+                <div id="nav_Photos">Photos</div>
+                <div id="nav_RSVP">RSVP</div>
+            </div>
             </ul>
         </div>
     </body>
