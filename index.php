@@ -8,13 +8,15 @@
     </head>
 
     <body>
-        <div id="countDown">
-            365 Days<br />23 hours<br />51 Minutes
-        </div>
-        <div id="menu">
-            How we met | Our Wedding
-        </div>
-        <div id="hideGhosting">
+        <div class="navigation">
+            <ul>
+                <li>Home</li>
+                <li>Our Story</li>
+                <li>The Wedding</li>
+                <li>Accomodations</li>
+                <li>Photos</li>
+                <li>RSVP</li>
+            </ul>
         </div>
     </body>
 
