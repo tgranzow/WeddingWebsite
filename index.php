@@ -9,7 +9,7 @@
 
     <body>
         <div id="navigation">
-            <ul>
+            <ul id="nav_ul">
                 <li id="nav_home">Home</li>
                 <li id="nav_OurStory">Our Story</li>
                 <li id="nav_TheWedding">The Wedding</li>

@@ -6,12 +6,14 @@ html {
     background-size: cover;
 }
 
-ul {
+ul #nav_ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden background-color: white;
 }
 
 li {
     display: inline;
+    float: left;
 }
