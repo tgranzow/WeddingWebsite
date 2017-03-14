@@ -3,6 +3,7 @@
 
     <head>
         <title>Jason and Talia</title>
+        <?php include_once("analyticstracking.php") ?>
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
 
