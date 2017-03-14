@@ -6,7 +6,7 @@ html {
     background-size: cover;
 }
 
-ul #nav_ul {
+ul#nav_ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
