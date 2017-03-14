@@ -8,16 +8,17 @@
     </head>
 
     <body>
-        <div class="navigation">
+        <div id="navigation">
+            <ul>
+                <li id="nav_home">Home</li>
+                <li id="nav_OurStory">Our Story</li>
+                <li id="nav_TheWedding">The Wedding</li>
+                <li id="nav_Accomodations">Accomodations</li>
+                <li id="nav_Photos">Photos</li>
+                <li id="nav_RSVP">RSVP</li>
 
-                <div id="nav_home">Home</div>
-                <div id="nav_OurStory">Our Story</div>
-                <div id="nav_TheWedding">The Wedding</div>
-                <div id="nav_Accomodations">Accomodations</div>
-                <div id="nav_Photos">Photos</div>
-                <div id="nav_RSVP">RSVP</div>
-            </div>
             </ul>
+            </div>
         </div>
     </body>
 
