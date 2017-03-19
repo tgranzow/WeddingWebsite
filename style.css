@@ -38,7 +38,8 @@ ul#nav_ul {
     width: 320px;
     text-align: center;
     background-color: rgba(255, 255, 255, .85);
-    margin-top: 350px;
+    margin-top: 30%;
     font-size: 1em;
     border-radius: 25px;
+    font-family: "Euphoria Script", cursive;
 }
