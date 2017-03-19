@@ -11,14 +11,18 @@ ul#nav_ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, .85);
+    background-color: rgba(255, 255, 255, .82);
     padding-bottom: 20px;
     padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 5px;
 }
 
 .nav_item {
     display: inline;
-    padding: 30px 32px;
+    padding: 30px 1.5%;
     text-align: center;
     font-weight: bold;
 }
@@ -35,19 +39,67 @@ ul#nav_ul {
 
 #weddingDate {
     margin: 0 auto;
-    width: 320px;
+    width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, .85);
-    bottom: 15%;
-    position: absolute;
-    left: 0;
-    right: 0;
-    font-size: 1em;
-    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .82);
+    bottom: 5px;
     font-family: "Euphoria Script", cursive;
-    font-size: 30px;
+    font-size: 1.25em;
+    font-weight: bold;
+    position: fixed;
+    left: 0;
+    color: rgb(0, 156, 255);
 }
 
 #weddingDate p {
-    margin: 5px;
+    margin: 1px;
+}
+
+#weddingDate p:first-of-type {
+    font-size: 1.5em;
+}
+
+#countDown {
+    font-family: "Raleway";
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: rgb(0, 156, 255);
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: rgb(0, 156, 255);
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: rgb(0, 156, 255);
+    text-decoration: none;
+    background-color: rgba(224, 224, 235, 1);
+}
+
+li:hover {
+    background-color: rgba(224, 224, 235, 1);
+}
+
+#nav_names:hover {
+    background-color: none;
+}
+
+
+/* selected link */
+
+a:active {
+    color: rgb(0, 156, 255);
+    text-decoration: none;
 }
