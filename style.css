@@ -1,11 +1,3 @@
-body {
-    background: url(images/bed_2.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 ul#nav_ul {
     list-style-type: none;
     margin: 0;
@@ -35,32 +27,6 @@ ul#nav_ul {
     font-family: "Euphoria Script", cursive;
     color: rgb(0, 156, 255);
     font-size: 2em;
-}
-
-#weddingDate {
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(255, 255, 255, .82);
-    bottom: 5px;
-    font-family: "Euphoria Script", cursive;
-    font-size: 1.25em;
-    font-weight: bold;
-    position: fixed;
-    left: 0;
-    color: rgb(0, 156, 255);
-}
-
-#weddingDate p {
-    margin: 1px;
-}
-
-#weddingDate p:first-of-type {
-    font-size: 1.5em;
-}
-
-#countDown {
-    font-family: "PT Serif";
 }
 
 
