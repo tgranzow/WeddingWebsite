@@ -23,6 +23,11 @@ ul#nav_ul {
     height: 133px;
 }
 
+@font-face {
+    font-family: "ecolier";
+    src: url(fonts/ecolier/ec_cour.TTF) format("truetype");
+}
+
 #nav_names {
     font-family: "Euphoria Script", cursive;
     color: rgb(0, 156, 255);
