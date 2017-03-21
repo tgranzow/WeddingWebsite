@@ -23,14 +23,8 @@ ul#nav_ul {
     height: 133px;
 }
 
-#nav_names {
-    font-family: "Euphoria Script", cursive;
-    color: rgb(0, 156, 255);
-    font-size: 2em;
-}
-
-img {
-    height: 75px;
+#nav_names img {
+    height: 150px;
     width: auto;
 }
 
