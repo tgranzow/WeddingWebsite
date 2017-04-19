@@ -20,13 +20,14 @@ ul#nav_ul {
 #navigation {
     text-align: center;
     vertical-align: middle;
-    height: 133px;
+    height: 30px;
 }
 
-#nav_names img {
+
+/*#nav_names img {
     height: 150px;
     width: auto;
-}
+}*/
 
 
 /* unvisited link */
