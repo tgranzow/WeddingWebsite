@@ -91,3 +91,11 @@ a:active {
     color: rgb(0, 0, 153);
     text-decoration: none;
 }
+
+
+/*Our story css*/
+
+.story_text {
+    text-align: center;
+    font-family: "Montserrat";
+}
