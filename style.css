@@ -95,6 +95,10 @@ a:active {
 
 /*Our story css*/
 
+.love_story {
+    font-family: "Homemade Apple";
+}
+
 .story_text {
     text-align: center;
     font-family: "Montserrat";
